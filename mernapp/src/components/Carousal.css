@@ -1,0 +1,28 @@
+/* Carousal.css */
+
+#carousel {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+  #search-bar{
+    max-width: 900px;
+    width: 100%;
+    margin-left: 60%;
+  }
+  
+  .search-bar {
+    flex: 1;
+  }
+  
+  .carousel-image {
+    height: 100vh; /* Ensures the images fill the viewport height */
+    object-fit: cover; /* Ensures the images cover the container properly */
+  }
+  
