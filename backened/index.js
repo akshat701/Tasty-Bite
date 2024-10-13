@@ -6,7 +6,7 @@ const app = express()
 const port = 5000
 
 app.use((req,res,next) =>{
-    res.setHeader("Access-Control-Allow-Origin","http://localhost:3000")
+    res.setHeader("Access-Control-Allow-Origin","https://tasty-bite-backened.onrender.com")
     res.header(
         "Access-Control-Allow-Headers",
         "Origin,X-Requested-With, Content-Type, Accept"  
