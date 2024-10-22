@@ -23,7 +23,7 @@ export default function Cart() {
     // console.log(data,localStorage.getItem("userEmail"),new Date())
     let response = await fetch("http://localhost:5000/api/orderData", {
       // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
+      // Origin:"/login",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

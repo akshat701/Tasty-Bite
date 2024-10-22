@@ -50,7 +50,7 @@ router.post('/orderData', async (req, res) => {
     try {
         const { email, order_data, order_date } = req.body;
 
-        // Log the received request body for debugging
+       
         console.log('Received order data:', req.body);
 
         if (!email || !Array.isArray(order_data) || !order_date) {

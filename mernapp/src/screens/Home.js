@@ -10,6 +10,7 @@ export default function Home() {
   const [foodItem,setFoodItem] = useState([])
 
   const loadData = async ()=>{
+    //console.log("3");
     let response = await fetch("http://localhost:5000/api/foodData",{
       method:"POST",
       headers:{
@@ -18,17 +19,19 @@ export default function Home() {
     });
     response = await response.json();
 
-    //console.log(response[0],response[1]);
+    
     setFoodItem(response[0]);
     setFoodCat(response[1]);
   }
 
   useEffect(()=>{
+   
     loadData()
   },[])
 
   return (
     <div>
+     
       <div><Navbar /></div>
       <div><div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
         <div className="carousel-inner" id="carousel">
